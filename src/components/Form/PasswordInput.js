@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PasswordInput = ({value, onChange}) => {
+const PasswordInput = ({ value, onChange }) => {
     return (
         <div>
             <label htmlFor="password">Digite sua senha: </label>
