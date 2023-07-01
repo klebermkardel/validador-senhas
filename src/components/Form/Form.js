@@ -1,10 +1,14 @@
 import React from 'react';
 import PasswordInput from './PasswordInput';
+import ConfirmPasswordInput from './ConfirmPasswordInput';
 
 
 const Form = () => {
   return (
-    <PasswordInput />
+    <form>
+        <PasswordInput />
+        <ConfirmPasswordInput />
+    </form>
   )
 };
 
