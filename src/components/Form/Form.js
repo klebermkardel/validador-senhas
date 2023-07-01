@@ -16,6 +16,15 @@ const Form = () => {
     setConfirmPassword(event.target.value);
   };
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  
+    // Execute qualquer validação adicional ou lógica de envio aqui
+  
+    console.log('Formulário enviado!');
+  };
+  
+
   return (
     <form>
         <PasswordInput 
@@ -27,7 +36,7 @@ const Form = () => {
             onChange={handleConfirmPasswordChange}
             disabled={!password}
         />
-        <SubmitButton />
+        <SubmitButton onClick={handleSubmit} />
     </form>
   )
 };
