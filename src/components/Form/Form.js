@@ -1,6 +1,7 @@
 import React from 'react';
 import PasswordInput from './PasswordInput';
 import ConfirmPasswordInput from './ConfirmPasswordInput';
+import SubmitButton from './SubmitonButton';
 
 
 const Form = () => {
@@ -8,6 +9,7 @@ const Form = () => {
     <form>
         <PasswordInput />
         <ConfirmPasswordInput />
+        <SubmitButton />
     </form>
   )
 };
