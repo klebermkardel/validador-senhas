@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PasswordInput from './PasswordInput';
 import ConfirmPasswordInput from './ConfirmPasswordInput';
 import SubmitButton from './SubmitButton';
-
+import PasswordRequirements from '../Requirements/PasswordRequirements';
 
 const Form = () => {
   const [password, setPassword] = useState('');
@@ -36,6 +36,7 @@ const Form = () => {
             onChange={handleConfirmPasswordChange}
             disabled={!password}
         />
+        <PasswordRequirements password={password} confirmPassword={confirmPassword} />
         <SubmitButton onClick={handleSubmit} />
     </form>
   )
