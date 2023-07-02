@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import PasswordInput from './PasswordInput';
 import ConfirmPasswordInput from './ConfirmPasswordInput';
-import SubmitButton from './SubmitButton';
 import PasswordRequirements from '../Requirements/PasswordRequirements';
 
 const Form = () => {
@@ -14,14 +13,6 @@ const Form = () => {
   
   const handleConfirmPasswordChange = (event) => {
     setConfirmPassword(event.target.value);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-  
-    // Execute qualquer validação adicional ou lógica de envio aqui
-  
-    console.log('Formulário enviado!');
   };
   
 
@@ -37,7 +28,6 @@ const Form = () => {
             disabled={!password}
         />
         <PasswordRequirements password={password} confirmPassword={confirmPassword} />
-        <SubmitButton onClick={handleSubmit} />
     </form>
   )
 };
