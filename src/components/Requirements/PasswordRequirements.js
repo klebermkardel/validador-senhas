@@ -1,6 +1,5 @@
 import React from 'react';
-
-import './PasswordRequirements.css'
+import './PasswordRequirements.css';
 
 const PasswordRequirements = ({ password, confirmPassword }) => {
   const hasMinLength = password.length >= 8;
@@ -10,7 +9,8 @@ const PasswordRequirements = ({ password, confirmPassword }) => {
   const passwordsMatch = password.length > 0 && password === confirmPassword;
 
   return (
-    <div>
+    <div className='PasswordRequirements'>
+      <h2>Requisitos de Senha:</h2>
       <ul>
         <li className={hasMinLength ? 'valid' : 'invalid'}>
           Pelo menos 8 caracteres

@@ -10,26 +10,28 @@ const Form = () => {
   const handlePasswordChange = (event) => {
     setPassword(event.target.value);
   };
-  
+
   const handleConfirmPasswordChange = (event) => {
     setConfirmPassword(event.target.value);
   };
-  
 
   return (
-    <form>
-        <PasswordInput 
-            value={password} 
-            onChange={handlePasswordChange} 
-        />
-        <ConfirmPasswordInput
-            value={confirmPassword}
-            onChange={handleConfirmPasswordChange}
-            disabled={!password}
-        />
-        <PasswordRequirements password={password} confirmPassword={confirmPassword} />
+    <form className='Form'>
+      <PasswordInput
+        value={password}
+        onChange={handlePasswordChange}
+      />
+      <ConfirmPasswordInput
+        value={confirmPassword}
+        onChange={handleConfirmPasswordChange}
+        disabled={!password}
+      />
+      <PasswordRequirements
+        password={password}
+        confirmPassword={confirmPassword}
+      />
     </form>
-  )
+  );
 };
 
 export default Form;

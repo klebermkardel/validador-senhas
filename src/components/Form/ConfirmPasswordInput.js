@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 
+import './Input.css'
+
 const ConfirmPasswordInput = ({ value, onChange, disabled }) => {
   const [showPassword, setShowPassword] = useState(false);
 
@@ -10,7 +12,7 @@ const ConfirmPasswordInput = ({ value, onChange, disabled }) => {
   };
 
   return (
-    <div>
+    <div className="InputContainer">
       <label htmlFor="confirmPassword">Confirme sua senha:</label>
       <div className="password-input">
         <input
@@ -20,17 +22,13 @@ const ConfirmPasswordInput = ({ value, onChange, disabled }) => {
           onChange={onChange}
           disabled={disabled}
         />
-        <button
-          type="button"
-          onClick={handleTogglePassword}
-          disabled={disabled}
-        >
+        <div className="eye-icon" onClick={handleTogglePassword}>
           {showPassword ? (
             <FontAwesomeIcon icon={faEyeSlash} />
           ) : (
             <FontAwesomeIcon icon={faEye} />
           )}
-        </button>
+        </div>
       </div>
     </div>
   );
