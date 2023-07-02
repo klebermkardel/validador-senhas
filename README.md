@@ -34,12 +34,5 @@ Este é um aplicativo web simples que permite ao usuário digitar uma senha e co
 - Cada componente tem seu próprio arquivo `.js` e `.css` correspondente, que definem sua estrutura e estilos específicos.
 - O componente `PasswordRequirements` verifica as condições da senha e exibe uma lista com os requisitos.
 
-## Vídeo do Projeto
-
-Confira o vídeo abaixo para ver o projeto em funcionamento:
-
-![Vídeo do Projeto](https://github.com/klebermkardel/validador-senhas/blob/main/public/assets/02.07.2023_09.48.06_REC.mp4)
-
-
 Sinta-se à vontade para explorar e modificar o código conforme necessário. Divirta-se!
 
