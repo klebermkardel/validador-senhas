@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Validador de Senhas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um aplicativo web simples que permite ao usuário digitar uma senha e confirmar a senha. Ele verifica se a senha atende a certos requisitos, como comprimento mínimo, presença de letras maiúsculas, letras minúsculas, caracteres especiais e se a senha e a confirmação de senha são iguais.
 
-## Available Scripts
+## Tecnologias utilizadas
 
-In the project directory, you can run:
+- React: uma biblioteca JavaScript para construir interfaces de usuário.
+- FontAwesome: uma biblioteca de ícones vetoriais para exibir ícones de olho aberto e olho fechado nos campos de senha.
+- CSS: para estilização dos componentes e layout do aplicativo.
+- JavaScript: para a lógica do aplicativo, manipulação de eventos e validação de senha.
 
-### `npm start`
+## Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- O usuário pode digitar uma senha no campo "Digite sua senha".
+- O campo de senha possui uma opção de visualização da senha com um ícone de olho. Ao clicar no ícone, a senha é exibida como texto legível ou ocultada como um campo de senha normal.
+- Após digitar a senha, o usuário pode digitar a mesma senha no campo "Confirme sua senha".
+- O campo de confirmação de senha é desabilitado até que a senha seja digitada.
+- À medida que a senha é digitada, são exibidos requisitos de senha no campo "Requisitos de Senha", incluindo comprimento mínimo, presença de letras maiúsculas, letras minúsculas, caracteres especiais e se a senha e a confirmação de senha são iguais.
+- Os requisitos de senha são destacados em verde se forem atendidos e em vermelho se não forem atendidos.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Executando o projeto
 
-### `npm test`
+1. Certifique-se de ter o Node.js instalado em sua máquina.
+2. Clone este repositório em seu computador.
+3. Abra o terminal e navegue até a pasta do projeto.
+4. Execute o comando `npm install` para instalar as dependências.
+5. Após a instalação das dependências, execute o comando `npm start` para iniciar o aplicativo.
+6. O aplicativo estará disponível em `http://localhost:3000` em seu navegador.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Estrutura do projeto
 
-### `npm run build`
+- O arquivo principal do aplicativo é o `App.js`, que contém o componente principal e importa os componentes `Title`, `Form`, `PasswordInput`, `ConfirmPasswordInput` e `PasswordRequirements`.
+- Os estilos do aplicativo estão no arquivo `App.css`, onde são definidos estilos para o layout geral.
+- Cada componente tem seu próprio arquivo `.js` e `.css` correspondente, que definem sua estrutura e estilos específicos.
+- O componente `PasswordRequirements` verifica as condições da senha e exibe uma lista com os requisitos.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Vídeo do Projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Confira o vídeo abaixo para ver o projeto em funcionamento:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Vídeo do Projeto]()
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Sinta-se à vontade para explorar e modificar o código conforme necessário. Divirta-se!
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
