@@ -38,7 +38,7 @@ Este é um aplicativo web simples que permite ao usuário digitar uma senha e co
 
 Confira o vídeo abaixo para ver o projeto em funcionamento:
 
-![Vídeo do Projeto]()
+![Vídeo do Projeto](https://github.com/klebermkardel/validador-senhas/blob/main/public/assets/02.07.2023_09.48.06_REC.mp4)
 
 
 Sinta-se à vontade para explorar e modificar o código conforme necessário. Divirta-se!
